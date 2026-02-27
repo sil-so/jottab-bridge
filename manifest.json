@@ -1,0 +1,9 @@
+{
+  "id": "jottab-bridge",
+  "name": "JotTab Bridge",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Serves vault files over localhost HTTP for the JotTab Chrome extension.",
+  "author": "Silso",
+  "isDesktopOnly": true
+}
