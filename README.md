@@ -1,6 +1,6 @@
 # JotTab Bridge
 
-Obsidian plugin that serves your vault data over localhost HTTP for the [JotTab](https://github.com/sil-so/jottab) Chrome extension.
+Obsidian plugin that serves your vault data over localhost HTTP for the [JotTab](https://jottab.com) Chrome extension.
 
 ## What it does
 
