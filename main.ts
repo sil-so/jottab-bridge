@@ -155,6 +155,8 @@ export default class JotTabBridgePlugin extends Plugin {
       .map((f) => ({
         name: f.name,
         path: f.path,
+        createdAt: f.stat.ctime,
+        modifiedAt: f.stat.mtime,
       }))
       .sort((a, b) => a.path.localeCompare(b.path));
 

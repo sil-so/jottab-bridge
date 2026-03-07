@@ -1,6 +1,6 @@
 {
   "name": "jottab-bridge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JotTab Bridge — localhost HTTP server for the JotTab Chrome extension",
   "main": "main.js",
   "scripts": {
