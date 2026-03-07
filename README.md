@@ -16,12 +16,14 @@ JotTab Bridge creates a lightweight HTTP server on `127.0.0.1:27124` that lets t
 ## Installation
 
 ### Via BRAT (recommended)
+
 1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat) in Obsidian
 2. Open BRAT Settings → **Add Beta Plugin**
 3. Enter: `sil-so/jottab-bridge`
 4. Enable **JotTab Bridge** in Community Plugins
 
 ### Manual
+
 1. Download `main.js` and `manifest.json` from the [latest release](https://github.com/sil-so/jottab-bridge/releases/latest)
 2. Create `.obsidian/plugins/jottab-bridge/` in your vault
 3. Place both files inside
@@ -29,18 +31,18 @@ JotTab Bridge creates a lightweight HTTP server on `127.0.0.1:27124` that lets t
 
 ## Usage
 
-1. Open Obsidian — you should see: *"JotTab Bridge running on port 27124"*
+1. Open Obsidian — you should see: _"JotTab Bridge running on port 27124"_
 2. Run the command `JotTab Bridge: Show connection token` to copy your token
 3. In JotTab's settings (Obsidian tab), paste the token and click **Connect**
 
 ## API Endpoints
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/ping` | GET | Health check, returns vault name |
-| `/list` | GET | List all `.md` files in the vault |
-| `/read?path=...` | GET | Read a specific note's content |
-| `/write` | POST | Write content to a specific note |
+| Endpoint         | Method | Description                                                                                      |
+| ---------------- | ------ | ------------------------------------------------------------------------------------------------ |
+| `/ping`          | GET    | Health check, returns vault name                                                                 |
+| `/list`          | GET    | List all `.md` files in the vault (includes metadata: `path`, `name`, `createdAt`, `modifiedAt`) |
+| `/read?path=...` | GET    | Read a specific note's content                                                                   |
+| `/write`         | POST   | Write content to a specific note                                                                 |
 
 ## Building from source
 
